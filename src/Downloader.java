@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 public class Downloader {
     public static void runCommand(String[] command) throws InterruptedException {
         ProcessBuilder pb = new ProcessBuilder(command);
-        pb.directory(new File("C:\\Users\\SourcesNet\\Downloads"));
+        pb.directory(new File("C:\\Users\\SourcesNet\\Videos"));
 
         try {
             Process process = pb.start();

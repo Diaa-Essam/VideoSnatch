@@ -12,8 +12,9 @@ public class Main {
 
         String[] command = {
                 "cmd", "/c", "yt-dlp",
-                "-f", "best[height<=" + quality + "] ",
+                "-f", "bestvideo[height<=" + quality + "] +bestaudio/best[height<=" + quality + "]",
                 url
         };
+        Downloader.runCommand(command);
     }
 }
